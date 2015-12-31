@@ -1,4 +1,9 @@
 require "sinatra"
 require "sinatra/activerecord"
 
-set :database, "sqlite:testblog.sqlite3"
+set :database, "sqlite3:testblog.sqlite3"
+
+get '/' do
+	"hello World"
+
+end	
